@@ -1,0 +1,66 @@
+/* Estilos para los botones de las redes sociales */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 4%;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos específicos para cada red social */
+  .button svg {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+  }
+  
+  /* Estilos para cada botón de red social */
+  .button.instagram {
+    background-color: #e4405f;
+  }
+  
+  .button.facebook {
+    background-color: #3b5998;
+  }
+  
+  .button.twitter {
+    background-color: #1da1f2;
+  }
+  
+  .button.youtube {
+    background-color: #ff0000;
+  }
+  
+  .button.tiktok {
+    background-color: #000000;
+  }
+  
+  .button.spotify {
+    background-color: #1db954;
+  }
+
+  .title {
+    color: black;
+  }
+
+  .custom-hr {
+    height: 2px;
+    background-color: #000000;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }

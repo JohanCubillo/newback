@@ -1,0 +1,44 @@
+
+
+.navbar-top {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+   padding-top: 100px;
+    background-color: #645757;
+  }
+  
+  .logo img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.856);
+  }
+  
+  .logo {
+    margin-right: 200px; /* Ajusta el margen derecho según tus necesidades */
+  }
+  
+  .logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }

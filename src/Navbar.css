@@ -1,0 +1,45 @@
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+color: #fff;
+background-color: aqua;
+font-size: 13rem;
+
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+color: #ffffff;
+color: #fcfcfc;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+
+color: #fcfcfc;
+background-color: aqua;
+
+}
+
+.mask-custom {
+   
+background-color: #615555;
+color: #fcfcfc;
+}
+
+li a{
+    color: #fcfcfc;
+}
+
+.navbar-brand {
+font-size: 13rem;
+letter-spacing: 3px;
+color: #fcfcfc;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}

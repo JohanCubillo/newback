@@ -1,0 +1,42 @@
+.event-carousel-container {
+   
+   
+padding-top: 50px;
+  }
+  
+  .event-card {
+    background-color: #2f2f2f;
+    color: #fff;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 300px;
+  }
+  
+  .event-card h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .event-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .event-card-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .event-card-overlay-text {
+    font-size: 24px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }

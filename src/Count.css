@@ -1,0 +1,65 @@
+/* Estilos para el contenedor principal */
+.count-container {
+  position: relative;
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.custom-text {
+  color: black;
+}
+
+/* Estilos para el título del evento */
+.event-title {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para la imagen del evento */
+.event-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contador */
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.countdown-item .value {
+  font-size: 36px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.countdown-item .label {
+  font-size: 12px;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+.custom-hr {
+  height: 2px;
+  background-color: #000000;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

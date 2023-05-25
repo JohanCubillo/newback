@@ -1,0 +1,55 @@
+.playlist-button {
+    background-color: #1DB954;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .button-container {
+    width: 100%;
+    background-color: #F1F1F1; /* Color de fondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .spotify-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Ajusta la altura máxima de la imagen según tus necesidades */
+  }
+  
+  /* Estilos específicos para Spotify */
+  .spotify-image {
+    border: 2px solid #1DB954;
+    border-radius: 50%;
+  }
+
+
+  .spotify-icon {
+    width: 30px; /* Ajusta el ancho del icono según tus necesidades */
+    height: 30px; /* Ajusta la altura del icono según tus necesidades */
+    margin-right: 10px; /* Ajusta el margen derecho del icono según tus necesidades */
+  }
+  
+  /* Estilos específicos para Spotify */
+  .spotify-icon {
+    border: 2px solid #1DB954;
+    border-radius: 50%;
+  }
+
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .center-col {
+    display: flex;
+    justify-content: center;
+  }
