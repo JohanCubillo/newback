@@ -27,7 +27,9 @@ ReactDOM.render(
       <div style={{backgroundColor: 'black', height: '10px'}}>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6527724668452654" crossorigin="anonymous"></script>
         <ExampleComponent />
+     
         <SocialMediaList />
+        
       </div>
       <BannerCustom />
       <Slider />
@@ -36,6 +38,7 @@ ReactDOM.render(
       <Compospoty />
       <SocialMedia />
       <ContactForm />
+      <SocialMediaList />
     </React.StrictMode>
   </BrowserRouter>,
   document.getElementById('root')
