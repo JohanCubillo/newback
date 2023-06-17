@@ -1,0 +1,58 @@
+.modal {
+    top: 0;
+    left: 0;
+    background-color: #333030;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background-color: #333030;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    color: rgb(250, 242, 242);
+    text-align: center;
+  }
+  
+  .modal-content p {
+    margin-bottom: 0;
+    color: rgb(243, 238, 238);
+    text-align: center;
+  }
+
+ .success-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333030;
+    color: #333030;
+    border: 4px solid rgb(254, 147, 30);
+    border-radius: 4px;
+  }
+  
+ .success-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  .success-container p {
+    color: aliceblue;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;  }  
+
+    .street{
+      margin-left: 20% ;
+      margin-right: 20%;
+      margin-bottom: 20px;
+    }
+
+    .masteryi{
+      width: 100%;
+    }

@@ -14,7 +14,7 @@ const SpotifyPlaylistButtons = ({ playlists }) => {
                 <div className="col-5">
                   <h2 className="title">Disfruta de las mejores playlist en Spotify con BackStage Magazine</h2>
                 </div>
-                <div className="col-7">
+                <div className="col-7 stylos">
                   <div className="button-container">
                     {playlists.map((playlist, index) => (
                       <a key={index} href={playlist.link} target="_blank" rel="noopener noreferrer">

@@ -36,8 +36,7 @@ const ExampleComponent = () => {
           <li><a href="#two" className="link link-theme link-arrow component-link">Conciertos</a></li>
           <li><a href="#three" className="link link-theme link-arrow component-link">Eventos pasados</a></li>
           <li><a href="#four" className="link link-theme link-arrow component-link">Contacto</a></li>
-          <li><a href="#four" className="link link-theme link-arrow component-link">Contacto</a></li>
-          <li><a href="#four" className="link link-theme link-arrow component-link">Contacto</a></li>
+          
         </ul>
       </header>
     </div>

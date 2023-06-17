@@ -4,6 +4,7 @@ import './CountDown.css';
 function CountDown({ date, image }) {
   const [timeLeft, setTimeLeft] = useState(null);
   const [showImage, setShowImage] = useState(false);
+  const [hideBackground, setHideBackground] = useState(false);
 
   useEffect(() => {
     const fetchCurrentTime = async () => {
@@ -12,7 +13,7 @@ function CountDown({ date, image }) {
         const data = await response.json();
         const apiTime = new Date(data.datetime.replace(' ', 'T'));
         const now = new Date().getTime();
-        const distance = apiTime.getTime() - now; // Utiliza la hora de la API para calcular la diferencia de tiempo.
+        const distance = apiTime.getTime() - now;
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -20,13 +21,14 @@ function CountDown({ date, image }) {
         setTimeLeft({ days, hours, minutes, seconds });
         if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
           setShowImage(true);
+          setHideBackground(true);
         }
       } catch (error) {
         console.error('Error al obtener la hora de la API:', error);
       }
     };
 
-    fetchCurrentTime(); // Realiza la petición al cargar el componente
+    fetchCurrentTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -38,6 +40,7 @@ function CountDown({ date, image }) {
       setTimeLeft({ days, hours, minutes, seconds });
       if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
         setShowImage(true);
+        setHideBackground(true);
       }
     }, 1000);
 
@@ -45,13 +48,18 @@ function CountDown({ date, image }) {
   }, [date]);
 
   return (
-    <div>
+    <div className={`countdown-container ${hideBackground ? 'hide-background' : ''}`}>
       {timeLeft !== null && (timeLeft.days > 0 || timeLeft.hours > 0 || timeLeft.minutes > 0 || timeLeft.seconds > 0) ? (
         <p className="countdown-text">
-          {timeLeft.days} días, {timeLeft.hours} horas, {timeLeft.minutes} minutos, {timeLeft.seconds} segundos para el evento
+          {timeLeft.days} días, {timeLeft.hours} horas, {timeLeft.minutes} minutos, {timeLeft.seconds} segundos para el aviso
         </p>
       ) : (
-        showImage && <img src={image} alt="Evento finalizado" />
+        showImage && (
+          <>
+            <img src={image} alt="Evento finalizado" />
+            <p className="black-text">Próximo evento</p>
+          </>
+        )
       )}
     </div>
   );

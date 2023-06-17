@@ -1,65 +1,92 @@
-/* Estilos para el contenedor principal */
-.count-container {
+.full-screen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #272727;
   position: relative;
-  display: flexbox;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 8px;
 }
 
-.custom-text {
-  color: black;
+.full-screen-container::before,
+.full-screen-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
 }
 
-/* Estilos para el título del evento */
-.event-title {
-  font-size: 24px;
-  color: #333333;
-  margin-bottom: 20px;
+.full-screen-container::before {
+  top: 0;
+  border-top: 5px solid rgb(254,147,30);
+  
 }
 
-/* Estilos para la imagen del evento */
-.event-image {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
+.full-screen-container::after {
+  bottom: 0;
+  
+  border-top: 5px solid rgb(254,147,30);
+}
+.default-image {
+  background-image: url('back.png');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
-/* Estilos para el contador */
-.countdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.countdown-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 10px;
-}
-
-.countdown-item .value {
-  font-size: 36px;
-  color: #333333;
-  font-weight: bold;
-}
-
-.countdown-item .label {
-  font-size: 12px;
-  color: #777777;
-  text-transform: uppercase;
-}
-
-.custom-hr {
-  height: 2px;
-  background-color: #000000;
+.white-hr {
   border: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  border-top: 1px solid #000000;
+  margin: 10px 0;
+}
+
+.black-text {
+  color: #ffffff;
+}
+
+.container {
+  text-align: left;
+}
+
+.event-title {
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+
+}
+
+.image-containers {
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgb(255, 145, 0);
+  height: auto;
+
+}
+
+.event-title {
+  color: rgb(253, 250, 250);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+
+.custom-text{
+  color: rgb(255, 255, 255);
+  
+}
+
+.image-containers img {
+
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .event-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-title {
+    font-size: 20px;
+  }
 }

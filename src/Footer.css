@@ -1,0 +1,47 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333030;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  text-align: left;
+}
+
+.center-section {
+  flex: 2;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.left-section p {
+  font-size: 14px;
+}
+
+.right-section p {
+  font-size: 12px;
+}
+
+.logo-foot {
+  width: 200px;
+  height: 200px;
+}
+
+.policies-section {
+  background-color: #333030;
+  align-items: center;
+  text-align: center;
+}
+
+.policies-section p {
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+.image-row {
+    display: flex;
+  }
+  
+  .image-container {
+    margin: 10px;
+  }
+  
+  .vintage-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100px;
+    height: 100px;
+    filter: sepia(50%) contrast(1.2) brightness(0.9) saturate(1.5);
+    transition: all 0.3s ease;
+  }
+  
+  .image:hover {
+    transform: scale(1.1);
+  }
+  
+  .text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .btn {
+    margin-top: 10px;
+  }

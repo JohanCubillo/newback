@@ -1,22 +1,56 @@
 .compospoty-container {
-    background-color: #f5f5f5;
+  background-color: #333030;
     padding: 20px;
+    
   }
   
   .compospoty-heading {
     font-size: 24px;
-    color: #000000;
+    background-color: #333030;
     margin-bottom: 20px;
+    
   }
 
   .custom-hr {
     height: 2px;
-    background-color: #000000;
+    background-color: #333030;
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
   .title {
-    color: black;
+    color: rgb(255, 253, 253);
+  }
+
+  .statik{
+    background-color: #333030;
+  }
+
+  .godlike{
+    background-color: #333030;
+    border: 4px solid rgb(254, 147, 30);
+  }
+
+
+  @media (max-width: 768px) {
+    .title {
+      font-size: 20px;
+    }
+  
+    .col-10 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 18px;
+    }
+  
+    .col-10 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }

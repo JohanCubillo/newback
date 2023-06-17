@@ -1,0 +1,38 @@
+
+.ally{
+  border: 2px solid rgb(254,147,30);;
+}
+.AutoSlider {
+    width: 70%; /* Ancho del componente */
+    margin: auto; /* Centra el componente horizontalmente */
+  
+
+  }
+  .colorh2 {
+    color: black;
+  }
+  /* Estilos para los puntos de navegación (dots) */
+  .slick-dots {
+    bottom: 10px; /* Posición vertical de los dots */
+  }
+  
+  /* Estilos para los dots individuales */
+  .slick-dots li button:before {
+    color: #464242; /* Color del dot */
+    opacity: 0.5; /* Opacidad del dot inactivo */
+    font-size: 10px; /* Tamaño de la fuente del dot */
+  }
+  
+  /* Estilos para el dot activo */
+  .slick-dots li.slick-active button:before {
+    opacity: 1; /* Opacidad del dot activo */
+  }
+  
+  /* Estilos para las imágenes dentro del slider */
+  .AutoSlider img {
+    width: 70%; /* Ancho de las imágenes */
+    height: auto; /* Altura automática de las imágenes */
+  }
+
+
+  

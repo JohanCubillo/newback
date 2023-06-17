@@ -1,0 +1,28 @@
+.toco {
+    width: 100%;
+    height: 20%;
+    /* Agrega otros estilos de tu elección para el contenedor del banner */
+  }
+  
+  .toco img {
+    width: 100%;
+    height: 250px;
+    /* Agrega otros estilos de tu elección para la imagen del banner */
+  }
+  
+  @media (max-width: 768px) {
+    .toco {
+      /* Estilos específicos para pantallas más pequeñas */
+      /* Por ejemplo, puedes cambiar el tamaño del contenedor del banner */
+      
+      width: 100%;
+      height: auto;
+    }
+  
+    .toco img {
+      /* Estilos específicos para la imagen del banner en pantallas más pequeñas */
+      /* Por ejemplo, puedes ajustar el tamaño de la imagen */
+      width: 100%;
+      height: auto;
+    }
+  }

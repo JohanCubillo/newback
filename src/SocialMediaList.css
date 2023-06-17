@@ -42,3 +42,27 @@
     max-width: 100%;
     height: auto;
   }
+
+
+
+
+
+  @media only screen and (max-width: 768px) {
+    .navbar-top,
+    .navbar {
+      padding-top: 50px;
+    }
+  
+    .logo {
+      margin-right: 0;
+    }
+  
+    .social-icons a {
+      margin-left: 5px;
+    }
+  
+    .social-icons img {
+      width: 20px;
+      height: 20px;
+    }
+  }

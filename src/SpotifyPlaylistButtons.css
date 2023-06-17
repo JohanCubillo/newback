@@ -1,6 +1,6 @@
 .playlist-button {
     background-color: #1DB954;
-    color: #FFFFFF;
+    color: #fffbfb;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
@@ -11,7 +11,7 @@
   
   .button-container {
     width: 100%;
-    background-color: #F1F1F1; /* Color de fondo */
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,12 +40,14 @@
   .spotify-icon {
     border: 2px solid #1DB954;
     border-radius: 50%;
+    
   }
 
   .center-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #333030;
 
   }
   
@@ -53,3 +55,24 @@
     display: flex;
     justify-content: center;
   }
+
+  .text-container{
+    background-color: #333030;
+  }
+
+  .button-container{
+    background-color: #333030;
+  }
+
+  .stylos{
+    background-color: #333030;
+  }
+
+.statik .title{
+  color: #fffbfb;
+}
+
+.stylos .button-container {
+  background-color: #333030;
+}
+

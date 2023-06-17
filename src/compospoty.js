@@ -11,16 +11,16 @@ const Compospoty = () => {
   ];
 
   return (
-    <div className="row">
-      <hr className="custom-hr" />
+    <div className="row godlike">
+     
       <div className="col-1"></div> {/* Col-1 antes de la parte de "Nuestras playlists de Spotify" */}
-      <div className="col-10">
+      <div className="col-10 statik">
         <h1 className="title">Nuestras playlists de Spotify</h1>
         <div className="playlist-container">
           <SpotifyPlaylistButtons playlists={playlists} />
         </div>
       </div>
-      <hr className="custom-hr" />
+      
     </div>
   );
 };
