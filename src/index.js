@@ -35,7 +35,7 @@ ReactDOM.render(
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6527724668452654" crossorigin="anonymous"></script>
         
         <ExampleComponent />
-     
+        <ExampleComponent />
         <SocialMediaList />
         
       </div>
