@@ -73,7 +73,7 @@ const MySlider = () => {
   };
 
   return (
-    <div>
+    <div className='alls'>
       <h2 className="siguientes">Siguientes eventos</h2>
       <Slider {...settings} className="slider-container">
         {slides.map((slide) => (

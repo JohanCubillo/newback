@@ -1,5 +1,42 @@
+.alls::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: rgb(254, 147, 30); /* Color naranja */
+ 
+}
+
+.alls::after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(to right, transparent 0%, transparent 45%, #fe931e 55%, transparent 100%);
+  background-size: 200% 100%;
+  animation: waveAnimation 2s linear infinite;
+}
+
+@keyframes waveAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .alls::after {
+    height: 3px; /* Altura para pantallas más pequeñas */
+  }
+}
+
+
+
 .slider-container {
-  background-color: #ffffff;
+  
   position: relative;
   width: 100%; /* Ajusta el ancho del slider según tus necesidades */
   margin: 0 auto; /* Centra el slider horizontalmente */
@@ -8,6 +45,7 @@
   overflow: hidden;
   align-items: center;
   padding-bottom: 30px;
+ 
 }
 
 .siguientes {
@@ -16,6 +54,7 @@
   margin-left: 15%;
   color: #000;
   font-size: 30px;
+
 }
 
 .siguientes {

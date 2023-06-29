@@ -77,26 +77,25 @@ const AlbumSlider = () => {
   };
 
   return (
-   
-    
-    <Slider {...settings}>
-      {albums.map((album) => (
-        
-        <div key={album.year} className="slider-item">
-          
-          <div className="image-container">
-          
-            <img src={album.image} alt={album.title} />
-            <div className="overlay">
-              <h3>{album.title}</h3>
-              <p>Un día como hoy, pero en el año {album.year}, se lanzó el álbum {album.title}.</p>
-          <button onClick={() => openSpotify(album.spotifyLink)}>Ir a Spotify</button>
+    <>
+      <h1 className="siguientes">Albumes Lanzados hoy</h1>
+      <Slider {...settings}>
+        {albums.map((album) => (
+          <div key={album.year} className="slider-item">
+            <div className="image-container">
+              <img src={album.image} alt={album.title} />
+              <div className="overlay">
+                <h3>{album.title}</h3>
+                <p>
+                  Un día como hoy, pero en el año {album.year}, se lanzó el álbum {album.title}.
+                </p>
+                <button onClick={() => openSpotify(album.spotifyLink)}>Ir a Spotify</button>
+              </div>
             </div>
           </div>
-          
-        </div>
-      ))}
-    </Slider>
+        ))}
+      </Slider>
+    </>
   );
 };
 

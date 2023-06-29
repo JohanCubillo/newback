@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1B1B1B;
+  background-color: #000000;
   padding: 20px;
+ 
 }
 
 .header-logo img {
@@ -15,6 +16,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.header {
+  background-color: #000000;
+  position: fixed;
+  width: 100%;
+  z-index: 6;
+ 
+  padding: 10px 0;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+
+  margin-right: 10%;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px 4px 20px;
+  text-decoration: none;
 }
 
 .header-nav-list {

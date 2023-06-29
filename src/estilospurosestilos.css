@@ -3,6 +3,10 @@
   font-family: Montserrat;
 }
 
+
+.orange-text {
+  color: rgb(235, 232, 226);
+}
 html {
   color: #c9c2c2;
   font-size: 1em;
@@ -39,9 +43,7 @@ p {
   color: #fcf9f9;
 }
 
-.header {
-  width: 80%;
-}
+
 
 h1,h2,h3,h4,h5,h6 {
   font-family: Montserrat;
@@ -131,7 +133,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .link:hover {
-  color: #f0e3e3
+  color: #d86c14;
 }
 
 .link:hover:before {
@@ -139,7 +141,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .link-theme:before {
-  background: #f8f8f5
+  background: #d86c14;
 }
 
 @media only screen and (min-width:250px) {
@@ -218,42 +220,19 @@ h1,h2,h3,h4,h5,h6 {
 /* header   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
 
 .header {
-  background-color: #030303;
+  background-color: #000000;
   position: fixed;
   width: 100%;
   z-index: 6;
- 
+  margin-bottom: 100px;
   padding: 10px 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Para navegadores basados en WebKit */
+  box-shadow: 2px 2px 2px rgb(196, 77, 22);
+
 }
 
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
 
-  margin-right: 10%;
-}
-
-.header li a {
-  display: block;
-  padding: 20px 20px 4px 20px;
-  text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
- 
-}
-
-.header .logo {
-  color: #ebe7e5;
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 2px 0px;
-  text-decoration: none;
-}
 
 /* menu */
 
@@ -275,7 +254,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: #000000;
   display: block;
   height: 2px;
   position: relative;
@@ -285,7 +264,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #dacfcf;
+  background: #d86c14;
   content: '';
   display: block;
   height: 100%;
@@ -398,7 +377,7 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 14px;
   padding: 40px 0;
   background: #fff;
-  color: #888
+  color: #000000
 }
 
 .footer .container {

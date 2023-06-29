@@ -3,6 +3,19 @@ import './Footer.css';
 import logoImage from './back.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
+
+const HomePage = () => {
+  return <h1>Home Page</h1>;
+};
+
+const AboutPage = () => {
+  return <h1>About Page</h1>;
+};
+
+const TermsPage = () => {
+  return <h1>Términos y condiciones</h1>;
+};
 
 const Footer = () => {
   return (
@@ -22,9 +35,9 @@ const Footer = () => {
         </div>
 
         <div className="right-section">
-        <p><a href="google.com">Numero de telefono : 60492466</a></p>
-          <p><a href="google.com">Términos y condiciones</a></p>
-          <p><a href="#">Políticas de privacidad</a></p>
+          <p><a href="google.com">Número de teléfono: 60492466</a></p>
+          <p><Link to="/terms">Términos y condiciones</Link></p>
+          <p><Link to="/PrivacyPage">Políticas de privacidad</Link></p>
         </div>
       </footer>
       <div className="policies-section">
@@ -32,6 +45,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Footer;
